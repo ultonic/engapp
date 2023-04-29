@@ -4,10 +4,12 @@ import './InputComponent.css';
 function InputComponent(props) {
   const [counter, setCounter] = useState(props.phrases.length);
   const [uncoveredPhrases, setUncoveredPhrases] = useState([]);
+  const [showCongratulation, setShowCongratulation] = useState(false);
 
   useEffect(() => {
     setCounter(props.phrases.length);
     setUncoveredPhrases([]);
+    setShowCongratulation(false);
   }, [props.phrases]);
 
   function handleInputChange(event) {
@@ -19,6 +21,9 @@ function InputComponent(props) {
       setCounter(prevCounter => prevCounter - 1);
       setUncoveredPhrases(prevUncoveredPhrases => [...prevUncoveredPhrases, props.phrases[uncoveredIndex]]);
       event.target.value = '';
+    }
+    if (counter === 1) {
+      setShowCongratulation(true);
     }
   }
   
@@ -34,6 +39,7 @@ function InputComponent(props) {
           <li key={index}>{phrase}</li>
         ))}
       </ul>
+      {showCongratulation && <p className="congratulation">Congratulations, you uncovered all the phrases!</p>}
       <p>{counter} phrases left to uncover.</p>
     </div>
   );
