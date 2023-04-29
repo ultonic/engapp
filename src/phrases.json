@@ -1,0 +1,18 @@
+{
+    "presentSimple": [
+      "I am", "You are", "He is", "She is", "It is", "We are", "They are",
+      "I am not", "You are not", "He is not", "She is not", "It is not", "We are not", "They are not",
+      "Am I?", "Are you?", "Is he?", "Is she?", "Is it?", "Are we?", "Are they?"
+    ],
+    "pastSimple": [
+      "I was", "You were", "He was", "She was", "It was", "We were", "They were",
+      "I was not", "You were not", "He was not", "She was not", "It was not", "We were not", "They were not",
+      "Was I?", "Were you?", "Was he?", "Was she?", "Was it?", "Were we?", "Were they?"
+    ],
+    "futureSimple": [
+      "I will be", "You will be", "He will be", "She will be", "It will be", "We will be", "They will be",
+      "I will not be", "You will not be", "He will not be", "She will not be", "It will not be", "We will not be", "They will not be",
+      "Will I be?", "Will you be?", "Will he be?", "Will she be?", "Will it be?", "Will we be?", "Will they be?"
+    ]    
+  }
+  
