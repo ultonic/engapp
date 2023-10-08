@@ -1,40 +1,80 @@
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+body {
+  font-family: 'Trebuchet MS', sans-serif; /* Using PT Sans Google Font */
+  background-color: #fff5e4;
+  margin: 0;
+  padding: 0;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #850e35;
 }
 
-.menu button {
-  margin-right: 20px;
-  font-size: 20px;
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #850e35;
 }
 
-.menu button:hover {
-  cursor: pointer;
+.phrase {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #fff; /* Changed text color to white for better contrast */
+    border-radius: 5px;
+    padding: 10px; /* Added padding for better spacing */
 }
 
-.input-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+input[type="text"] {
+    padding: 15px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-.input-container h1 {
-  margin-bottom: 20px;
+.main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
 }
 
-.selected {
-  background-color: rgb(53, 53, 53);
-  color:aliceblue;
+.layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    /* border: 1px solid #ccc; */
+    color: #850e35;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin: 30px 10px;
+    background-color: #ffc4c4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow for elevation */
+}
+
+.rectangle {
+    /* border: 1px solid #ccc; */
+    background-color: #ee6983;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.blurred {
+    filter: blur(5px);
 }
