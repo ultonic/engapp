@@ -1,13 +1,38 @@
 import React from 'react';
-import './App.css';
-import PresentToBe from './components/PresentToBe';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
-function App() { 
+import './App.css';
+
+import PresentToBe from './components/PresentToBe';
+import PastToBe from './components/PastToBe';
+import FutureToBe from './components/FutureToBe';
+
+const App = () => {
   return (
-    <div className="App">
-      <PresentToBe />
-    </div>
-  ); 
-}
+    <Router>
+      <div className="App">
+        <nav>
+          <ul className='menu'>
+            <li>
+              <Link to="/present">Present</Link>
+            </li>
+            <li>
+              <Link to="/past">Past</Link>
+            </li>
+            <li>
+              <Link to="/future">Future</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/present" element={<PresentToBe />} />
+          <Route path="/past" element={<PastToBe />} />
+          <Route path="/future" element={<FutureToBe />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
 export default App;

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-const PresentToBe = () => {
+const PastToBe = () => {
   const phrases = {
-    "Positive": ["I am", "You are", "He is", "She is", "It is", "We are", "They are"],
-    "Negative": ["I am not", "You are not", "He is not", "She is not", "It is not", "We are not", "They are not"],
-    "Questions": ["Am I?", "Are you?", "Is he?", "Is she?", "Is it?", "Are we?", "Are they?"]
+    "Positive": ["I will be", "You will be", "He will be", "She will be", "It will be", "We will be", "They will be"],
+    "Negative": ["I will not be", "You will not be", "He will not be", "She will not be", "It will not be", "We will not be", "They will not be"],
+    "Questions": ["Will I be?", "Will you be?", "Will he be?", "Will she be?", "Will it be?", "Will we be?", "Will they be?"]
   };
 
   const [uncoveredPhrases, setUncoveredPhrases] = useState([]);
@@ -89,7 +89,7 @@ const PresentToBe = () => {
 
   return (
     <div className="main">
-      <h1>Present To Be</h1>
+      <h1>Future To Be</h1>
       <input ref={(input) => input && input.focus()} type="text" placeholder="Enter a phrase" className="main-input" onChange={handleInputChange} value={inputText} />
       <div className="layout">
         {Object.keys(phrases).map((type) => (
@@ -111,4 +111,4 @@ const PresentToBe = () => {
   );
 }
 
-export default PresentToBe;
+export default PastToBe;
